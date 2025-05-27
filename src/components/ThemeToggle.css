@@ -1,0 +1,38 @@
+.theme-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #6c5ce7;
+  transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Dark Theme Styles */
+body.dark-theme {
+  background: linear-gradient(135deg, #1e272e, #2d3436);
+  color: #f5f6fa;
+}
+
+body.dark-theme .app-container {
+  background: transparent;
+}
+
+body.dark-theme .task-input-container,
+body.dark-theme .task-item,
+body.dark-theme .task-stats,
+body.dark-theme .timer {
+  background-color: #2d3436;
+  color: #f5f6fa;
+  border-color: #636e72;
+}
+
+body.dark-theme .task-item .actions button {
+  color: #dfe6e9;
+}
